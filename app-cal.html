@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>MY WEB PAGE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="calculatorPage">
+  <header>
+    <nav>
+      <ul>
+        <li class="menuLi"><a class="menu" href="index.html">Home</a></li>
+        <li class="menuLi"><a class="menu" href="aboutMe.html">About Me</a></li>
+        <li class="menuLi"><a class="menu" href="contact.html">Contact</a></li>
+        <li class="menuLi"><a class="menu" href="fq.html">FAQ</a></li>
+        <li class="menuLi"><a class="menu" href="code.html">The Code</a></li>
+      </ul>
+    </nav>
+    <section class="nav-title">
+      <h1>The Portfolio Website Inc.</h1>
+      <h2>Calculator App</h2>
+    </section>
+  </header>
+
+  <div id="calculator">
+    <input id="display" readonly>
+    <div id="keys">
+      <button style="font-size: 60px;" onclick="appendToDisplay('+')" class="operator-btn">+</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('7')">7</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('8')">8</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('9')">9</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('-')" class="operator-btn">-</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('4')">4</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('5')">5</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('6')">6</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('*')" class="operator-btn">*</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('1')">1</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('2')">2</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('3')">3</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('/')" class="operator-btn">/</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('0')">0</button>
+      <button style="font-size: 60px;" onclick="appendToDisplay('.')">.</button>
+      <button style="font-size: 60px;" onclick="calculate()">=</button>
+      <button style="font-size: 60px;" onclick="clearDisplay()" class="operator-btn">C</button>
+    </div>
+  </div>
+
+  <footer>123 Main Street Ringwood, VIC : 444-444-4444 : me@all.com </footer>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

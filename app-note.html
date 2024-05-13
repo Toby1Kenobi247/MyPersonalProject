@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>MY WEB PAGE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="noted">
+  <header>
+    <nav>
+      <ul>
+        <li class="menuLi"><a class="menu" href="index.html">Home</a></li>
+        <li class="menuLi"><a class="menu" href="aboutMe.html">About Me</a></li>
+        <li class="menuLi"><a class="menu" href="contact.html">Contact</a></li>
+        <li class="menuLi"><a class="menu" href="fq.html">FAQ</a></li>
+        <li class="menuLi"><a class="menu" href="code.html">The Code</a></li>
+      </ul>
+    </nav>
+    <section class="nav-title">
+      <h1>The Portfolio Website Inc.</h1>
+      <h2>To-Do List App</h2>
+    </section>
+  </header>
+  <section class="todo">
+    <h2>To-do list</h2>
+    <div class="input">
+      <input
+        type="text"
+        class="input-field"
+        id="todoInput"
+        placeholder="Add a new todo"
+      />
+     
+      <button class="btn">Add</button>
+    </div>
+    <ul class="scroll">
+      <li id="todoList"></li>
+    </ul>
+    <div>
+      <hr class="counter" />
+      <div class="counter-container">
+        <p><span id="todoCount">0</span> items total</p>
+        <button id="deleteButton">Delete All</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>123 Main Street Ringwood, VIC : 444-444-4444 : me@all.com </footer>
+
+  <script src="note.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>MY WEB PAGE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="WeatherPage">
+  <header>
+    <nav>
+      <ul>
+        <li class="menuLi"><a class="menu" href="index.html">Home</a></li>
+        <li class="menuLi"><a class="menu" href="aboutMe.html">About Me</a></li>
+        <li class="menuLi"><a class="menu" href="contact.html">Contact</a></li>
+        <li class="menuLi"><a class="menu" href="fq.html">FAQ</a></li>
+        <li class="menuLi"><a class="menu" href="code.html">The Code</a></li>
+      </ul>
+    </nav>
+    <section class="nav-title">
+      <h1>The Portfolio Website Inc.</h1>
+      <h2>Weather App</h2>
+    </section>
+  </header>
+  <div id="Weathers">
+    <form class="weatherForm">
+      <input type="text" class="cityInput" placeholder="Enter city">
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <div class="card" style="display: none">
+    </div>
+
+    <div class="the-best-box">
+      <h1>F&deg; to C&deg; Converter</h1>
+    </div>
+
+    <section class="Farenheit-box">
+      <div class="cel-box">
+        <br>
+        <input type="number" name="" placeholder="Enter Farenheit Degree" id="fd" style="font-size: 25px;">
+        <button class="btn-convert" onclick="changeDeg()"> Change to Celcius </button>
+        <input type="text" name="" placeholder="Degree in Celcius" id="cd" style="font-size: 25px;">
+
+      </div>
+    </section>
+
+
+  </div>
+  <footer>123 main street Ringwood, VIC : 444-444-4444 : me@all.com </footer>
+
+  <script src="w.js"></script>
+
+</body>
+
+</html>

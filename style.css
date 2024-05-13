@@ -1,0 +1,930 @@
+/*Hello World*/
+
+body {
+  background: rgb(195, 195, 195);
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/*Font*/
+
+h1 {
+  font-size: 30px;
+}
+
+h5 {
+  color: black;
+  text-decoration-color: rgb(0, 0, 0);
+}
+
+/*Sections*/
+
+header {
+  color: hsl(180, 53%, 51%);
+  background-color: rgb(34, 40, 49);
+  padding: 20px;
+  padding-bottom: 5px;
+}
+
+footer {
+  padding: 10px;
+  color: rgb(93, 93, 93);
+  background-color: rgb(195, 195, 195);
+  text-align: center;
+  font-size: 12px;
+}
+
+/*Lists*/
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li.menuLi {
+
+  color: white;
+  display: inline-block;
+  margin: 15px;
+  margin-top: 0px;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+
+
+/*Links*/
+
+a:visited,
+a.menu:link {
+  text-decoration: none;
+  color: hsl(183, 26%, 57%);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.contacted:link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/*Feature Box*/
+
+.feature-box {
+  display: flex;
+}
+
+.feature-box div {
+  width: 100%;
+  margin: 2px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.feature-box.info {
+  height: 300px;
+}
+
+.feature-box.info div {
+  background: rgb(147, 158, 155);
+  margin: 5px 2px 5px 2px;
+  width: 25%;
+  padding: 0px;
+  text-align: center;
+  border-radius: 30%;
+
+}
+
+.feature-box.info article {
+  width: 75%;
+  margin: 2px;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 15px;
+  background: rgb(121, 154, 144);
+  margin: 5px 2px 5px 2px;
+  text-align: left;
+
+}
+.feature-box.bind div {
+  background: rgb(153, 185, 172);
+  margin: 5px 10px 5px 10px;
+  border-radius: 25px;
+  font-size: 18px;
+  text-decoration-color: black;
+  width: 100%;
+}
+
+.feature-box.find a div {
+  background: rgb(107, 167, 143);
+  margin: 5px 10px 5px 10px;
+  border-radius: 25px;
+  font-size: 18px;
+  text-decoration-color: black;
+  width: 100%;
+}
+
+.feature-box.ports div {
+  background: rgb(104, 178, 182);
+  font-size: 15px;
+  border-radius: 12px;
+}
+
+.feature-box.mre div {
+  background-color: rgb(205, 182, 141);
+  height: 200px;
+  text-align: left;
+}
+
+.feature-box.codingExp div {
+  background-color: rgb(208, 168, 219);
+  height: 200px;
+  text-align: left;
+}
+
+/*Other*/
+
+.container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30%;
+
+}
+
+span {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.material-icons {
+  align-self: center;
+  float: right;
+  font-size: w3-large;
+}
+
+/*Calculator*/
+
+#calculatorPage {
+  background-color: rgb(240, 229, 200);
+}
+
+#calculator {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  max-width: 800px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+#display {
+  width: 100%;
+  padding: 15px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 25px;
+}
+
+button {
+  width: 150px;
+  height: 80px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+  background-color: hsl(162, 50%, 48%);
+}
+
+.operator-btn:hover {
+  background-color: hsl(162, 50%, 58%);
+}
+
+.operator-btn:active {
+  background-color: hsl(162, 50%, 68%);
+}
+
+/*Weather*/
+
+.WeatherPage {
+  font-family: Arial, sans-serif;
+  background: rgb(195, 195, 195);
+}
+
+#Weathers {
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherForm {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cityInput {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid hsla(0, 0%, 20%, 0.3);
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.65rem;
+  background-color: hsl(122, 39%, 50%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: hsl(122, 39%, 40%);
+}
+
+.card {
+  background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.cityDisplay,
+.tempDisplay {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.8);
+  margin-bottom: 25px;
+}
+
+.humidityDisplay {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.descDisplay {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.weatherEmoji {
+  margin: 0;
+  font-size: 7.5rem;
+}
+
+.errorDisplay {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.75);
+}
+
+/*Converter*/
+
+.the-best-box {
+  width: 100%;
+  height: 70px;
+  background-color: hsl(216, 18%, 20%);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: hsl(180, 53%, 51%);
+}
+
+.cel-box {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: 5px solid white;
+  -webkit-box-shadow:
+    inset 0 0 8px rgba(0, 0, 0, 0.1),
+    0 0 16px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow:
+    inset 0 0 8px rgba(0, 0, 0, 0.1),
+    0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    inset 0 0 8px rgba(0, 0, 0, 0.1),
+    0 0 16px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 0 10px 0;
+}
+
+/* General Buttons */
+.btn-convert {
+  width: 100%;
+  height: 70px;
+  background: hsl(122, 39%, 50%);
+  /* W3C */
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+  font-size: 25px;
+  text-align: center;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, .2);
+  cursor: pointer;
+
+  /* Just for presentation */
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+button:active {
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, .2);
+  top: 1px;
+}
+
+button:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  opacity: 0.6;
+  right: 0;
+  top: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+/*PSR*/
+
+.psr-div{
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.psr-h1 {
+  font-size: 70px;
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.choices{
+  margin-bottom: 30px;
+}
+.choices button{
+  font-size: 7.5rem;
+  min-width: 160px;
+  height: auto;
+  margin: 0 10px;
+  border-radius: 250px;
+  background-color: hsl(200, 100%, 50%);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.choices button:hover{
+  background-color: hsl(200, 100%, 70%);
+}
+#playerDisplay, #computerDisplay{
+  font-size: 2.5rem;
+}
+#resultDisplay{
+  font-size: 5rem;
+  margin: 30px 0;
+}
+.scoreDisplay{
+  font-size: 2rem;
+}
+.greenText, #playerScoreDisplay{
+  color: hsl(130, 84%, 54%);
+}
+.redText, #computerScoreDisplay{
+  color: hsl(0, 84%, 60%);
+}
+
+/*Stop Watch*/
+
+.stop-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(195, 195, 195);
+}
+#myH1{
+  font-size: 4rem;
+  font-family: "Arial", sans-serif;
+  color: hsl(0, 5%, 35%);
+  
+}
+#container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border: 5px solid;
+  border-radius: 50px;
+  background-color: hsl(0, 2%, 61%);
+}
+#display{
+  font-size: 6rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: hsl(180, 53%, 51%);
+  background-color: hsl(216, 18%, 20%);
+  margin-bottom: 25px;
+}
+#controls button{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+#startBtn{
+  background-color: hsl(115, 100%, 40%);
+}
+#startBtn:hover{
+  background-color: hsl(115, 100%, 30%);
+}
+#stopBtn{
+  background-color: hsl(10, 90%, 50%);
+}
+#stopBtn:hover{
+  background-color: hsl(10, 90%, 40%);
+}
+#resetBtn{
+  background-color: hsl(205, 90%, 60%);
+}
+#resetBtn:hover{
+  background-color: hsl(205, 90%, 50%);
+}
+
+/*Dice Roller*/
+
+#container{
+  margin: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.btn-dice{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(210, 100%, 50%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(210, 100%, 60%);
+}
+button:active{
+    background-color: hsl(210, 100%, 70%);
+}
+input{
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+#diceResult{
+    margin: 25px;
+}
+#diceImages img{
+    width: 150px;
+    margin: 5px;
+}
+
+/*Notes App*/
+
+.to-body {
+    margin: 0;
+    min-width: 250px;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+.uled {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul.uled li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul.uled li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul.uled li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul.uled li.checked {
+  background: #557e7c;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul.uled li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #bf2018;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #6aa8b2;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+/*TIC*/
+
+.cell{
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  box-shadow: 0 0 0 2px;
+  line-height: 75px;
+  font-size: 50px;
+  cursor: pointer;
+}
+#gameContainer{
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+}
+#cellContainer{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 225px;
+  margin: auto;
+}
+
+/*TODO*/
+
+:root {
+  --gradient: linear-gradient(
+    180deg,
+    rgba(45, 112, 1253, 0.73) 0%,
+    #163e92 100%
+  );
+  --dark: #001747;
+  --grey: #b1bacb;
+  --grey-border: rgba(210, 210, 210, 0.75);
+  --grey-light: #eeeeee;
+  --grey-dark: $405175;
+  --blue: #2d70fd;
+  --green: #00d8a7;
+  --white: #ffffff;
+}
+
+.tototo {
+  background: var(--gradient);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn {
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  background-color: var(--blue);
+  border: none;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  width: auto;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Todo Container */
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  border-radius: 2rem;
+  background: var(--white);
+  padding: 3rem;
+  height: 70%;
+  width: 80%;
+  box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+  max-width: 30rem;
+}
+
+
+.input {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  border: 0.06rem solid #d2d2d2bf;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  font-size: 1rem;
+}
+
+input[type="text"]::placeholder {
+  color: var(--grey);
+  text-align: left;
+}
+
+.todo-container {
+  display: flex;
+  gap: 1rem;
+}
+
+
+#todoList p {
+  display: flex;
+  gap: 1rem;
+  color: var(--dark);
+  align-items: center;
+}
+
+#todoList .disabled {
+  color: #8f98a8;
+}
+
+.disabled {
+  display: flex;
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+  content: "\2713";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.7rem;
+  text-align: center;
+  border: 0.06rem solid var(--grey-border);
+  border-radius: 50%;
+  color: transparent;
+}
+
+input[type="checkbox"]:checked::before {
+  color: var(--white);
+  background-color: var(--green);
+  border: 0.06rem solid var(--green);
+  border-radius: 50%;
+}
+
+.counter {
+  border: 0.06rem solid var(--grey-light);
+}
+
+.counter-container {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey);
+}
+
+.counter-container p {
+  align-self: center;
+}
+
+.counter-container button {
+  border: none;
+  background-color: transparent;
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.made-by,
+.author {
+  font-size: 0.9rem;
+}
+
+.made-by {
+  color: var(--grey-dark);
+}
+
+.author {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.scroll {
+  height: 15rem;
+  scrollbar-width: thin;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+}
+
+.scroll::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* <div class="movie_head" data-toggle="collapse" data-target="#thor_love_and_thunder">
+<span class="glyphicon glyphicon-film"></span>Apps<i class="fa fa-sort-desc"></i>
+
+
+<div id="thor_love_and_thunder" class="collapse"> </div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+
+    <table>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>Description of A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>Description of B</td>
+    </tr>
+  </table>
